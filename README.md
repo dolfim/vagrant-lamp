@@ -1,6 +1,8 @@
 Vagrant LAMP
 ============
 
+This is a fork of <https://github.com/mattandersen/vagrant-lamp>, where I added phpMyAdmin.
+
 Want to test a new web app but don't want to affect your current Apache / MySQL / PHP system?
 Applications like MAMP are great, but they don't make it easy to maintain multiple, separate
 web roots.
@@ -21,7 +23,7 @@ Usage
 -----
 
 ### Startup
-	$ git clone http://www.github.com/mattandersen/vagrant-lamp
+	$ git clone http://www.github.com/dolfim/vagrant-lamp
 	$ cd vagrant-lamp
 	$ vagrant up
 
@@ -37,12 +39,17 @@ Externally the MySQL server is available at port 8889, and when running on the V
 Username: root
 Password: root
 
+### phpMyAdmin
+The MySQL admin tool is available at <http://localhost:8888/phpmyadmin>
+
+
 Technical Details
 -----------------
 * Ubuntu 14.04 64-bit
 * Apache 2
 * PHP 5.5
 * MySQL 5.5
+* phpMyAdmin 4.0 (added in this fork)
 
 We are using the base Ubuntu 14.04 box from Vagrant. If you don't already have it downloaded
 the Vagrantfile has been configured to do it for you. This only has to be done once
